@@ -147,7 +147,7 @@ const Stake: NextPage = () => {
     if(!address) return;
     let amount = Web3.utils.toWei(id,'ether');
     console.log(amount);
-    await stakeTokenContract.setAllowance(stakingContractAddress,amount);
+    awaitstakeTokenContract?.setAllowance(stakingContractAddress,amount);
     await contract?.call("tokenStake", amount);
   }
   if (isLoading) {
