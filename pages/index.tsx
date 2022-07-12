@@ -13,26 +13,26 @@ const Home: NextPage = () => {
       <div
         className={styles.nftBoxGrid}
         role="button"
-        onClick={() => router.push(`/mint`)}
+        onClick={() => router.push(`/stake`)}
       >
         {/* Mint a new NFT */}
         <div className={styles.optionSelectBox}>
           <img src={`/icons/drop.webp`} alt="drop" />
-          <h2 className={styles.selectBoxTitle}>Buy DHO</h2>
+          <h2 className={styles.selectBoxTitle}>Stake Your token</h2>
           <p className={styles.selectBoxDescription}>
-            DHO will go to Mars.
+               Stake <b>Your Token </b>{" "}  
           </p>
         </div>
 
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push(`/stake`)}
+          onClick={() =>router.push(`/mint`)}
         >
           <img src={`/icons/token.webp`} alt="drop" />
-          <h2 className={styles.selectBoxTitle}>Stake Your token</h2>
+          <h2 className={styles.selectBoxTitle}>BUY DHO</h2>
           <p className={styles.selectBoxDescription}>
-            Stake <b>Your Token </b>{" "}         
+            DHO will go to mars.   
           </p>
         </div>
       </div>
